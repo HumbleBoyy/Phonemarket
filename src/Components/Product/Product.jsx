@@ -10,11 +10,12 @@ const Product = () => {
       name:"Honor 200 pro",
       coundition:"First hand",
       price:600,
+      count:1,
       color:"Black",
       region:"China",
       status: true,
       storage:"512GB",
-      description:"A good phone to use",
+      description:"A good phone to use on a daily bases",
       image:honor200
     },
     
@@ -22,12 +23,13 @@ const Product = () => {
       id:2,
       name:"Galaxy S25 Ultra",
       coundition:"First hand",
+      count:1,
       color:"Black",
       region:"S.Korea",
       price:900,
       status: true,
       storage:"512GB",
-      description:"A good phone to use",
+      description:"Galaxy S24 is one of the best camera phone in the world...",
       image:galaxy24
     },
   ])
