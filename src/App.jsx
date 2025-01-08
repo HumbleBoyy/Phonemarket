@@ -1,10 +1,11 @@
 import './App.css'
+import Main from './Components/Main/Main'
 
 function App() {
 
   return (
     <>
-     <h2 className='text-red-600'>Phone Market</h2>
+     <Main/>
     </>
   )
 }
