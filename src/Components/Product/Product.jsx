@@ -1,0 +1,43 @@
+import React, { useState } from 'react'
+import honor200 from "../../assets/images/honor.png"
+import galaxy24 from "../../assets/images/galaxy.png"
+import ProductCart from '../ProductCart/ProductCart'
+const Product = () => {
+  const [products, setProducts] = useState([
+
+    {
+      id:1,
+      name:"Honor 200 pro",
+      coundition:"First hand",
+      price:600,
+      color:"Black",
+      region:"China",
+      status: true,
+      storage:"512GB",
+      description:"A good phone to use",
+      image:honor200
+    },
+    
+    {
+      id:2,
+      name:"Galaxy S25 Ultra",
+      coundition:"First hand",
+      color:"Black",
+      region:"S.Korea",
+      price:900,
+      status: true,
+      storage:"512GB",
+      description:"A good phone to use",
+      image:galaxy24
+    },
+  ])
+  return (
+    <div className='my-5 w-[1000px] mx-auto mt-32'>
+        <ul className='flex justify-between gap-2 flex-wrap'>
+            {products.map(item => <ProductCart item={item}/>)}
+        </ul>
+    </div>
+  )
+}
+
+export default Product
