@@ -1,11 +1,10 @@
-
 import './App.css'
 
 function App() {
 
   return (
     <>
-     Phone Market
+     <h2 className='text-red-600'>Phone Market</h2>
     </>
   )
 }
