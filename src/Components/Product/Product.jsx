@@ -36,7 +36,7 @@ const Product = () => {
   return (
     <div className='my-5 w-[1000px] mx-auto mt-32'>
         <ul className='flex justify-between gap-2 flex-wrap'>
-            {products.map(item => <ProductCart item={item}/>)}
+            {products.map(item => <ProductCart key={item.id} item={item}/>)}
         </ul>
     </div>
   )
