@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import logo2 from "../../assets/icons/logos/logo2.svg"
 import { Add, Cart, Star } from '../../assets/icons'
 import Modal from '../Modal/Modal'
-const Header = () => {
+import Input from '../Input/Input'
+const Header = ({products, setProducts}) => {
   const [addModal, setAddModal] = useState(false)
   return (
     <>
@@ -21,8 +22,25 @@ const Header = () => {
         </div>
     </div>
 
-    <Modal openModal={addModal} setOpenModal={setAddModal}>
-      Hello
+    <Modal openModal={addModal} setOpenModal={setAddModal} extraModalClass={"w-[700px]"}>
+      <form className='flex items-center flex-col justify-center mt-10 px-2'>
+        <div className='flex  w-full justify-evenly items-center'>
+        <div className='flex flex-col gap-2'>
+         <Input type={"text"} placeholder={"Enter a name"} className={"outline-none p-2 text-[20px] w-[300px] rounded-md shadow-md"}/>
+         <Input type={"text"} placeholder={"Enter a name"} className={"outline-none p-2 text-[20px] w-[300px] rounded-md shadow-md"}/>
+         <Input type={"text"} placeholder={"Enter a name"} className={"outline-none p-2 text-[20px] w-[300px] rounded-md shadow-md"}/>
+         <Input type={"text"} placeholder={"Enter a name"} className={"outline-none p-2 text-[20px] w-[300px] rounded-md shadow-md"}/>
+        </div>
+        <div className='flex flex-col gap-2'>
+         <Input type={"text"} placeholder={"Enter a name"} className={"outline-none p-2 text-[20px] w-[300px] rounded-md shadow-md"}/>
+         <Input type={"text"} placeholder={"Enter a name"} className={"outline-none p-2 text-[20px] w-[300px] rounded-md shadow-md"}/>
+         <Input type={"text"} placeholder={"Enter a name"} className={"outline-none p-2 text-[20px] w-[300px] rounded-md shadow-md"}/>
+         <Input type={"text"} placeholder={"Enter a name"} className={"outline-none p-2 text-[20px] w-[300px] rounded-md shadow-md"}/>
+        </div>
+        </div>
+
+        <button className='w-[300px] p-2 mt-2 font-bold text-white shadow-md rounded-md bg-blue-600'>Add</button>
+      </form>
     </Modal>
   </>
   )
