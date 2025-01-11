@@ -8,7 +8,7 @@ const Product = () => {
     {
       id:1,
       name:"Honor 200 pro",
-      coundition:"First hand",
+      condition:"First hand",
       price:600,
       count:1,
       color:"Black",
@@ -22,7 +22,7 @@ const Product = () => {
     {
       id:2,
       name:"Galaxy S25 Ultra",
-      coundition:"First hand",
+      condition:"First hand",
       count:1,
       color:"Black",
       region:"S.Korea",
